@@ -1,0 +1,92 @@
+
+body{
+    display: grid;
+    height: 100vh;      /*i used vh and vw for responsive body*/
+    width: 100vw;
+    background-color: azure;
+    place-items: center;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);      /*this created 4 equal boxes in a horizontal axis*/
+    grid-template-rows: auto;       /*This produces more rows if you keep adding more boxes*/
+    background-color: azure;
+    padding: 20px;
+    max-width: 70vw;
+    row-gap: 10px;
+    column-gap: 10px;
+    border-radius: 16px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;     /*this made it circle*/
+    object-fit: cover;          /*this makes sure the picture fits in the circle*/
+}
+
+#item1 {
+    display: grid;
+    grid-column: 1 / 5;
+}
+
+#item1 h1, #item2 h2, #item3 h2 {
+    color: rgba(255, 60, 0, 0.777)
+}
+
+#item1 p, #item2 p, #item3 p {
+    color: white;
+    font-size: 20px;
+}
+
+.box1 {
+    background-color: rgb(65, 163, 202);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.about-p {
+    display: flex;
+    flex-direction: column;
+}
+
+#item2 {
+    display: grid;
+    grid-column: 1 / 3;
+}
+
+#item3 {
+    display: grid;
+    grid-column: 3 / 5;
+}
+
+.flex-about{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.flex-about img {               /*centered the image*/
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#item2 p {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+main h2, 
+main h3, 
+main h4 {
+  margin-top: 0.3rem;   
+  margin-bottom: 0.3rem; 
+}
+
+main p {                
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.4; 
+}
