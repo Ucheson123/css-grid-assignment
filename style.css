@@ -90,3 +90,31 @@ main p {
   margin-bottom: 0.2rem;
   line-height: 1.4; 
 }
+
+
+
+
+@media (max-width:768px) {
+    main section{
+        grid-template-columns: 1fr;
+        max-width: 90vw;
+    }
+
+    #item1, 
+    #item2, 
+    #item3 {
+        grid-column: 1 / -1; /* each spans full width */
+    }
+
+    .flex-about{
+        display: grid;
+        gap: 0%;
+    }
+
+    .flex-about img{
+        margin-left: 30%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+}
